@@ -277,18 +277,33 @@ a:hover { text-decoration-thickness: 2px; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 36px;
-  padding: 0 var(--gnrc-gap-composite-large);
-  border: var(--gnrc-stroke-width-thin) solid #D8D8D8;
-  border-radius: var(--gnrc-border-radius-atomic-xsmall);
-  color: var(--gnrc-color-foreground-neutral-primary);
-  background: #FAFAFA;
-  font-size: var(--gnrc-font-size-functional-body-small);
+  gap: 12px;
+  min-height: 48px;
+  padding: 0 28px;
+  border: 1px solid #DADADA;
+  border-radius: 10px;
+  color: #4A4A4A;
+  background: #FFFFFF;
+  font-size: 18px;
   font-style: normal;
   font-weight: var(--gnrc-font-weight-semibold);
   text-decoration: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.03);
 }
-.download-button:hover { text-decoration: underline; }
+.download-button:hover {
+  border-color: #C8C8C8;
+  background: #FAFAFA;
+  text-decoration: none;
+}
+.download-button-icon {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 </style>
 </head>
 <body>
@@ -529,11 +544,18 @@ a:hover { text-decoration-thickness: 2px; }
   <div class="grid">
     <div class="col-hero">
       <div class="colophon">
-        <div class="footer-actions">
-          <a class="download-button" href="https://berit-herstad.github.io/AI-in-Education-Newsletter/AI%20in%20Education%20Daily%20-%202026-09-08.pdf" download>Download PDF</a>
-        </div>
         AI in Education Daily &middot; Berit Herstad &middot;
         September 8, 2026 &middot; Compiled from public sources
+        <div class="footer-actions">
+          <a class="download-button" href="https://berit-herstad.github.io/AI-in-Education-Newsletter/AI%20in%20Education%20Daily%20-%202026-09-08.pdf" download>
+            <svg class="download-button-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 4v11"></path>
+              <path d="M8 11l4 4 4-4"></path>
+              <path d="M5 20h14"></path>
+            </svg>
+            <span>Download PDF</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
