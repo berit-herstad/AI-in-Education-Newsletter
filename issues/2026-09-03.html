@@ -124,6 +124,11 @@ body {
   color: var(--gnrc-color-foreground-neutral-secondary);
   letter-spacing: 0.02em;
 }
+.masthead-date a {
+  color: var(--gnrc-color-foreground-brand-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 
 .pageheader,
 h1.pageheader {
@@ -283,6 +288,42 @@ a:hover { text-decoration-thickness: 2px; }
   text-align: center;
   font-style: italic;
 }
+.footer-actions {
+  margin-top: var(--gnrc-gap-composite-medium);
+  text-align: center;
+}
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 36px;
+  padding: 0 var(--gnrc-gap-composite-large);
+  border: 1px solid #DADADA;
+  border-radius: 8px;
+  color: #4A4A4A;
+  background: #FFFFFF;
+  font-family: var(--gnrc-font-family-content);
+  font-size: var(--gnrc-font-size-functional-body-small);
+  font-style: normal;
+  font-weight: var(--gnrc-font-weight-semibold);
+  text-decoration: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.03);
+}
+.download-button:hover {
+  border-color: #C8C8C8;
+  background: #FAFAFA;
+  text-decoration: none;
+}
+.download-button-icon {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  stroke-width: 1.9;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 </style>
 </head>
 <body>
@@ -293,10 +334,7 @@ a:hover { text-decoration-thickness: 2px; }
     <div class="col-hero">
       <div class="masthead">
         <span class="masthead-title">AI in Education Daily</span>
-        <span class="masthead-date">
-          Issue &middot; September 3, 2026 &middot;
-          <a href="../archive.html">Archive</a>
-        </span>
+        <span class="masthead-date">September 3, 2026 &middot; <a href="https://berit-herstad.github.io/AI-in-Education-Newsletter/archive.html">Archive</a></span>
       </div>
     </div>
   </div>
@@ -631,6 +669,16 @@ a:hover { text-decoration-thickness: 2px; }
       <div class="colophon">
         AI in Education Daily &middot; Berit Herstad &middot;
         September 3, 2026 &middot; Compiled from public sources
+        <div class="footer-actions">
+          <a class="download-button" href="https://berit-herstad.github.io/AI-in-Education-Newsletter/AI%20in%20Education%20Daily%20-%202026-09-03.pdf" download>
+            <svg class="download-button-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 4v11"></path>
+              <path d="M8 11l4 4 4-4"></path>
+              <path d="M5 20h14"></path>
+            </svg>
+            <span>Download PDF</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
