@@ -1,6 +1,6 @@
-# AI in Education Weekly — publishing site
+# AI in Education Daily — publishing site
 
-This folder is a **static site** ready to publish via GitHub Pages (or Netlify, or any static host). Once deployed, the URL never changes and the newsletter refreshes each week when the skill regenerates and re-pushes.
+This folder is a **static site** ready to publish via GitHub Pages (or Netlify, or any static host). Once deployed, the URL never changes and the newsletter refreshes each weekday when the automation regenerates and re-pushes.
 
 ## Structure
 
@@ -15,9 +15,9 @@ site/
 ## First-time deploy (about 10 minutes)
 
 1. **Create a public GitHub repo** — e.g. `ai-education-weekly`.
-2. From this `site/` folder:
+2. From the local site folder:
    ```bash
-   cd "/Users/beritherstad/Claude/Scheduled/ai-education-weekly-digest/site"
+   cd /path/to/site
    git init
    git add .
    git commit -m "Initial site with 2026-09-03 issue"
@@ -28,9 +28,9 @@ site/
 3. **Enable Pages** on the repo — GitHub → Settings → Pages → Build from `main` branch, `/` (root).
 4. GitHub gives you a URL like `https://YOUR-USERNAME.github.io/ai-education-weekly/`. Share that link in your Teams sandbox — it will always show the latest issue.
 
-## Weekly workflow (after first deploy)
+## Daily workflow (after first deploy)
 
-The skill will:
+The automation will:
 
 1. Generate the new issue as `Weekly Digest - YYYY-MM-DD.html`
 2. Copy it to `site/index.html` and `site/issues/YYYY-MM-DD.html`
