@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI in Education Weekly — 2026-09-08</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --gnrc-font-family-content:           'Segoe UI Variable', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --gnrc-font-family-content-editorial: 'Segoe Serif', 'Lora', Georgia, serif;
+  --gnrc-font-family-functional:        'Segoe UI Variable', 'Segoe UI', system-ui, -apple-system, sans-serif;
+
+  --gnrc-font-weight-regular:  400;
+  --gnrc-font-weight-semibold: 600;
+
+  --gnrc-font-size-content-paragraph-small:  14px;
+  --gnrc-font-size-content-paragraph-medium: 16px;
+  --gnrc-font-size-content-paragraph-large:  18px;
+  --gnrc-font-size-content-h4:               20px;
+  --gnrc-font-size-content-h3:               24px;
+  --gnrc-font-size-content-h2:               32px;
+  --gnrc-font-size-content-expressive-medium:32px;
+  --gnrc-font-size-content-expressive-large: 56px;
+
+  --gnrc-font-size-functional-body-small:    14px;
+  --gnrc-font-size-functional-caption:       12px;
+
+  --gnrc-line-height-content-paragraph:      1.55;
+  --gnrc-line-height-content-headline:       1.2;
+  --gnrc-line-height-content-expressive:     1.15;
+
+  --gnrc-letter-spacing--2:                  -0.025em;
+  --gnrc-letter-spacing--1:                  -0.01em;
+
+  --gnrc-gap-atomic-medium:    8px;
+  --gnrc-gap-composite-small:  12px;
+  --gnrc-gap-composite-medium: 16px;
+  --gnrc-gap-composite-large:  24px;
+  --gnrc-gap-layout-small:     32px;
+  --gnrc-gap-layout-large:     64px;
+
+  --gnrc-border-radius-atomic-xsmall:   4px;
+  --gnrc-stroke-width-thin:    1px;
+
+  --gnrc-color-foreground-neutral-primary:    #242424;
+  --gnrc-color-foreground-neutral-secondary:  #555555;
+  --gnrc-color-foreground-neutral-tertiary:   #777777;
+  --gnrc-color-stroke-neutral-subtle:         #EBEBEB;
+  --gnrc-color-surface-neutral:               #FFFFFF;
+  --gnrc-color-background-neutral-soft:       #F5F5F5;
+  --gnrc-color-foreground-brand-primary:      #242424;
+
+  --grid-max-width:        1020px;
+  --grid-columns:          16;
+  --grid-gutter:           16px;
+  --grid-margin:           16px;
+  --block-gap:             var(--gnrc-gap-layout-small);
+}
+
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  font-family: var(--gnrc-font-family-content);
+  font-size: var(--gnrc-font-size-content-paragraph-medium);
+  line-height: var(--gnrc-line-height-content-paragraph);
+  color: var(--gnrc-color-foreground-neutral-primary);
+  background: var(--gnrc-color-surface-neutral);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.doc {
+  max-width: var(--grid-max-width);
+  margin: 0 auto;
+  padding: 64px var(--grid-margin);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), 1fr);
+  column-gap: var(--grid-gutter);
+}
+.col-full,
+.col-hero {
+  display: flex;
+  flex-direction: column;
+  gap: var(--block-gap);
+}
+.col-full { grid-column: 1 / span 16; }
+.col-hero { grid-column: 3 / span 12; }
+.grid + .grid { margin-top: var(--block-gap); }
+
+@media (max-width: 580px) {
+  .grid { grid-template-columns: repeat(4, 1fr); row-gap: var(--block-gap); }
+  .col-full, .col-hero { grid-column: 1 / span 4; }
+}
+
+.masthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 24px;
+  border-bottom: var(--gnrc-stroke-width-thin) solid var(--gnrc-color-foreground-neutral-primary);
+  margin-bottom: var(--gnrc-gap-layout-small);
+}
+.masthead-title {
+  font-size: var(--gnrc-font-size-functional-body-small);
+  font-weight: var(--gnrc-font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+.masthead-date {
+  font-size: var(--gnrc-font-size-functional-body-small);
+  color: var(--gnrc-color-foreground-neutral-secondary);
+  letter-spacing: 0.02em;
+}
+
+.pageheader,
+h1.pageheader {
+  font-family: var(--gnrc-font-family-content-editorial);
+  font-style: italic;
+  font-weight: var(--gnrc-font-weight-regular);
+  font-size: var(--gnrc-font-size-content-expressive-large);
+  line-height: var(--gnrc-line-height-content-headline);
+  letter-spacing: var(--gnrc-letter-spacing--2);
+  margin: 0;
+}
+
+h2, h3, h4 {
+  font-family: var(--gnrc-font-family-content-editorial);
+  font-style: italic;
+  font-weight: var(--gnrc-font-weight-regular);
+  line-height: var(--gnrc-line-height-content-headline);
+  margin: 0;
+}
+h2 { font-size: var(--gnrc-font-size-content-h2); letter-spacing: var(--gnrc-letter-spacing--1); }
+h3 { font-size: var(--gnrc-font-size-content-h3); }
+h4 { font-size: var(--gnrc-font-size-content-h4); }
+
+.deck {
+  font-size: var(--gnrc-font-size-content-paragraph-large);
+  line-height: 1.5;
+  color: var(--gnrc-color-foreground-neutral-secondary);
+  max-width: 620px;
+}
+
+p {
+  font-size: var(--gnrc-font-size-content-paragraph-medium);
+  line-height: var(--gnrc-line-height-content-paragraph);
+  margin: 0 0 var(--gnrc-gap-composite-small);
+}
+p:last-child { margin-bottom: 0; }
+
+strong, b { font-weight: var(--gnrc-font-weight-semibold); }
+em, i { font-style: italic; }
+
+a {
+  color: var(--gnrc-color-foreground-brand-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+a:hover { text-decoration-thickness: 2px; }
+
+.section-break {
+  display: flex;
+  align-items: center;
+  gap: var(--gnrc-gap-composite-medium);
+}
+.section-break-badge {
+  flex-shrink: 0;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 var(--gnrc-gap-composite-small);
+  background: var(--gnrc-color-background-neutral-soft);
+  border-radius: var(--gnrc-border-radius-atomic-xsmall);
+  font-size: var(--gnrc-font-size-functional-body-small);
+  font-weight: var(--gnrc-font-weight-semibold);
+}
+.section-break-line {
+  flex: 1;
+  height: var(--gnrc-stroke-width-thin);
+  background: var(--gnrc-color-stroke-neutral-subtle);
+}
+.section-break-label {
+  flex-shrink: 0;
+  font-family: var(--gnrc-font-family-content-editorial);
+  font-style: italic;
+  font-size: var(--gnrc-font-size-content-paragraph-small);
+  color: var(--gnrc-color-foreground-neutral-secondary);
+  letter-spacing: var(--gnrc-letter-spacing--1);
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gnrc-gap-composite-medium);
+}
+.quote-graphic {
+  height: 32px;
+  width: auto;
+  align-self: flex-start;
+  fill: currentColor;
+}
+.quote-body {
+  font-family: var(--gnrc-font-family-content-editorial);
+  font-style: italic;
+  font-size: var(--gnrc-font-size-content-expressive-medium);
+  line-height: var(--gnrc-line-height-content-expressive);
+}
+
+.kicker {
+  font-size: var(--gnrc-font-size-functional-body-small);
+  font-weight: var(--gnrc-font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gnrc-color-foreground-neutral-tertiary);
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gnrc-gap-atomic-medium);
+  padding-top: var(--gnrc-gap-composite-large);
+  border-top: var(--gnrc-stroke-width-thin) solid var(--gnrc-color-stroke-neutral-subtle);
+}
+.story:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+.story-headline {
+  font-size: var(--gnrc-font-size-content-paragraph-large);
+  font-weight: var(--gnrc-font-weight-semibold);
+  line-height: 1.35;
+}
+.story-flag {
+  display: inline-block;
+  font-size: var(--gnrc-font-size-functional-caption);
+  font-weight: var(--gnrc-font-weight-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gnrc-color-foreground-neutral-tertiary);
+  margin-right: var(--gnrc-gap-atomic-medium);
+}
+.story-body {
+  font-size: var(--gnrc-font-size-content-paragraph-medium);
+  line-height: var(--gnrc-line-height-content-paragraph);
+}
+.story-sources {
+  font-size: var(--gnrc-font-size-content-paragraph-small);
+  color: var(--gnrc-color-foreground-neutral-secondary);
+}
+
+.colophon {
+  margin-top: var(--gnrc-gap-layout-large);
+  padding-top: var(--gnrc-gap-composite-large);
+  border-top: var(--gnrc-stroke-width-thin) solid var(--gnrc-color-stroke-neutral-subtle);
+  font-size: var(--gnrc-font-size-content-paragraph-small);
+  color: var(--gnrc-color-foreground-neutral-tertiary);
+  text-align: center;
+  font-style: italic;
+}
+</style>
+</head>
+<body>
+
+<div class="doc">
+
+  <div class="grid">
+    <div class="col-hero">
+      <div class="masthead">
+        <span class="masthead-title">AI in Education Weekly</span>
+        <span class="masthead-date">Issue &middot; September 8, 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="col-hero">
+      <h1 class="pageheader">The week schools drew sharper AI lines.</h1>
+      <p class="deck">
+        Large systems restricted student-facing generative AI for younger learners,
+        while ministries and universities moved ahead with AI literacy, teacher
+        training, and workforce pathways.
+      </p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="col-full">
+      <div class="section-break">
+        <span class="section-break-badge">1</span>
+        <span class="section-break-line"></span>
+        <span class="section-break-label">Top story</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="col-hero">
+      <span class="kicker">New York City &amp; Los Angeles &middot; Announced September 2-7</span>
+      <h2>The largest US districts move from experiments to guardrails.</h2>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="col-hero">
+      <p>
+        New York City and Los Angeles, the two largest US school districts, restricted
+        student use of generative AI tools this week. New York placed a one-year
+        moratorium on student-facing AI from preschool through eighth grade, while
+        LAUSD restricted access on school devices.
+      </p>
+      <p>
+        The significance is less that schools are banning tools outright and more
+        that age, contracts, and assessment integrity are becoming the control
+        points. <a href="https://www.msn.com/en-us/education-and-learning/general/a-growing-movement-wants-ai-out-of-schools/ar-AA2bJ2oD">Axios</a>,
+        <a href="https://www.edweek.org/technology/new-york-restricts-ai-in-elementary-and-middle-schools-will-other-districts-follow/2026/09">Education Week</a>,
+        and <a href="https://www.usatoday.com/story/news/education/2026/09/03/schools-limit-ai-teachers-mixed-reactions/91592547007/">USA Today</a>
+        framed the moves as part of a broader backlash against classroom tech,
+        not just chatbots.
+      </p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="col-hero">
+      <div class="quote">
+        <svg class="quote-graphic" viewBox="0 0 32 30" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 30V18.5C0 13.7 1.06667 9.6 3.2 6.2C5.33333 2.8 8.4 0.733333 12.4 0L13.6 4.5C11.0667 5.43333 9.13333 6.93333 7.8 9C6.46667 11.0667 5.8 13.4 5.8 16H12V30H0ZM18 30V18.5C18 13.7 19.0667 9.6 21.2 6.2C23.3333 2.8 26.4 0.733333 30.4 0L31.6 4.5C29.0667 5.43333 27.1333 6.93333 25.8 9C24.4667 11.0667 23.8 13.4 23.8 16H30V30H18Z"/>
+        </svg>
+        <div class="quote-body">
+          The center of gravity is shifting from “Should schools use AI?” to
+          “Who gets access, at what age, and under whose supervision?”
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="col-hero">
+      <p class="story-sources">
+        Sources &middot;
+        <a href="https://www.msn.com/en-us/education-and-learning/general/a-growing-movement-wants-ai-out-of-schools/ar-AA2bJ2oD">Axios</a> &middot;
+        <a href="https://www.edweek.org/technology/new-york-restricts-ai-in-elementary-and-middle-schools-will-other-districts-follow/2026/09">Education Week</a> &middot;
+        <a href="https://www.usatoday.com/story/news/education/2026/09/03/schools-limit-ai-teachers-mixed-reactions/91592547007/">USA Today</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="col-full">
+      <div class="section-break">
+        <span class="section-break-badge">2</span>
+        <span class="section-break-line"></span>
+        <span class="section-break-label">Research &amp; evidence</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="col-hero">
+      <h2>Evidence keeps rewarding guided use, not shortcut use.</h2>
+
+      <div class="story">
+        <div class="story-headline">AI tutors can help with math — if they do not give away the answer.</div>
+        <div class="story-body">
+          University of Toronto Mississauga research suggests AI tutors can improve
+          math learning when they force reasoning and withhold direct solutions.
+        </div>
+        <div class="story-sources"><a href="https://phys.org/news/2026-09-ai-students-math.html">Phys.org</a></div>
+      </div>
+
+      <div class="story">
+        <div class="story-headline">Engagement is not learning.</div>
+        <div class="story-body">
+          The American Psychological Association warned that edtech engagement
+          metrics should not be treated as proof of learning, especially when
+          generative AI enables shallow completion.
+        </div>
+        <div class="story-sources"><a href="https://phys.org/news/2026-09-technology-engagement.html">Phys.org</a></div>
+      </div>
+
+      <div class="story">
+        <div class="story-headline">Universities are redesigning assessment.</div>
+        <div class="story-body">
+          Academics worldwide are moving beyond AI detectors toward AI-resistant
+          exams, oral defenses, and process-based proof of learning.
+        </div>
+        <div class="story-sources"><a href="https://www.nature.com/articles/d41586-026-02370-2">Nature</a></div>
+      </div>
+
+      <div class="story">
+        <div class="story-headline">AI use is now nearly universal in some university cohorts.</div>
+        <div class="story-body">
+          A Plovdiv University survey found nearly 98% of students use AI, a signal
+          that higher education is past the adoption question and into the integrity
+          and pedagogy question.
+        </div>
+        <div class="story-sources"><a href="https://www.novinite.com/articles/240432/Nearly+98+of+Surveyed+Plovdiv+University+Students+Use+AI+as+Bulgarian+Universities+Grapple+With+Academic+Integrity">Novinite</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="col-full">
+      <div class="section-break">
+        <span class="section-break-badge">3</span>
+        <span class="section-break-line"></span>
+        <span class="section-break-label">Around the globe</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="col-hero">
+      <h2>What else moved this week.</h2>
+
+      <div class="story"><div class="story-body"><span class="story-flag">🇧🇷 Brazil</span>The National Education Council approved AI-use guidelines for schools and universities, including risk categories and limits on automated assessment. &nbsp;<a href="https://porvir.org/cne-diretrizes-inteligencia-artificial-escola-universidade/">Porvir</a></div></div>
+      <div class="story"><div class="story-body"><span class="story-flag">🇲🇽 Mexico</span>SEP and UNESCO signed a letter of intent to support ethical AI, digital-device, and social-media policy in education. &nbsp;<a href="https://www.jornada.com.mx/noticia/2026/09/07/sociedad/sep-y-unesco-acuerdan-impulsar-uso-etico-de-inteligencia-artificial-en-educacion">La Jornada</a></div></div>
+      <div class="story"><div class="story-body"><span class="story-flag">🇦🇪 UAE</span>The UAE is rolling out an AI curriculum across public and private schools, paired with large-scale teacher training. &nbsp;<a href="https://www.khaleejtimes.com/uae/uae-to-roll-out-ai-curriculum-across-all-schools-22000-teachers-to-be-trained">Khaleej Times</a></div></div>
+      <div class="story"><div class="story-body"><span class="story-flag">🇯🇵 Japan</span>The education ministry’s curriculum draft would expand information education and embed AI across subjects, not only computing. &nbsp;<a href="https://mainichi.jp/english/articles/20260901/p2a/00m/0na/024000c">The Mainichi</a></div></div>
+      <div class="story"><div class="story-body"><span class="story-flag">🇮🇳 India</span>Google is running nationwide AI training for educators in multiple Indian languages throughout September. &nbsp;<a href="https://www.educationtimes.com/article/newsroom/99742729/teachers-day-2026-google-rolls-out-nationwide-ai-training-sessions-for-indian-educators">Education Times</a></div></div>
+      <div class="story"><div class="story-body"><span class="story-flag">🇸🇬 Singapore</span>ITE and Singapore Polytechnic signed AI-ready built-environment skills MOUs with Nemetschek, covering digital twins and AI-assisted compliance. &nbsp;<a href="https://technode.global/2026/09/03/nemetschek-ite-singapore-polytechnic-ai-built-environment-skills/">TechNode Global</a></div></div>
+      <div class="story"><div class="story-body"><span class="story-flag">🇦🇺 Australia</span>School leaders face an “AI strategy gap,” with only a fraction confident they have clear plans. &nbsp;<a href="https://www.theeducatoronline.com/k12/news/the-ai-strategy-gap-in-australian-schools/289153">The Educator</a></div></div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="col-full">
+      <div class="section-break">
+        <span class="section-break-badge">4</span>
+        <span class="section-break-line"></span>
+        <span class="section-break-label">Tools &amp; platforms</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="col-hero">
+      <h2>Platforms ship around practice, tutoring, and upskilling.</h2>
+
+      <div class="story">
+        <div class="story-headline">Google &amp; Khan Academy expand Khanmigo.</div>
+        <div class="story-body">Google.org fellows and Gemini added real-time interactive diagrams and a teacher-controlled practice builder for back-to-school 2026.</div>
+        <div class="story-sources"><a href="https://gcn.com/google-org-fellows-gemini-bring-real/21227/">GCN</a></div>
+      </div>
+
+      <div class="story">
+        <div class="story-headline">ABP Education backs voice-first tutoring in India.</div>
+        <div class="story-body">The investment in YoLearn.ai targets textbook-aligned personal AI tutors for Indian students.</div>
+        <div class="story-sources"><a href="https://www.republicworld.com/initiatives/abp-education-invests-in-yolearnai-to-expand-personalized-learning-for-250-million-indian-students-noida-3rd-september-2026-2026-09-05-136388">Republic World</a></div>
+      </div>
+
+      <div class="story">
+        <div class="story-headline">Gauth adds user-generated education.</div>
+        <div class="story-body">The all-in-one AI learning platform is adding creator-style education features around conceptual understanding and expert resources.</div>
+        <div class="story-sources"><a href="https://www.tmcnet.com/usubmit/2026/09/01/10438561.htm">TMCnet</a></div>
+      </div>
+
+      <div class="story">
+        <div class="story-headline">Duke Executive Education and Simplilearn move into agentic AI credentials.</div>
+        <div class="story-body">Their new professional certificate covers applied generative AI and agentic AI for adult learners.</div>
+        <div class="story-sources"><a href="https://www.tmcnet.com/usubmit/2026/09/01/10438041.htm">TMCnet</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="col-full">
+      <div class="section-break">
+        <span class="section-break-badge">5</span>
+        <span class="section-break-line"></span>
+        <span class="section-break-label">Worth watching</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="col-hero">
+      <h2>Three patterns to track.</h2>
+
+      <div class="story">
+        <div class="story-headline">Age-gating is hardening.</div>
+        <div class="story-body">The US district moves, Norway comparisons, and UAE/Japan curriculum shifts all treat younger learners differently from older students.</div>
+      </div>
+
+      <div class="story">
+        <div class="story-headline">Assessment is moving from detection to design.</div>
+        <div class="story-body">Universities are redesigning tasks around process, oral defense, and demonstrated reasoning.</div>
+      </div>
+
+      <div class="story">
+        <div class="story-headline">Teacher enablement is becoming infrastructure.</div>
+        <div class="story-body">India, UAE, and platform providers are pairing AI rollout with educator training rather than assuming tools will self-adopt.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="col-hero">
+      <div class="colophon">
+        AI in Education Weekly &middot; Berit Herstad &middot;
+        September 8, 2026 &middot; Compiled from public sources
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
