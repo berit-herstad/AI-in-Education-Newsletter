@@ -8,7 +8,7 @@ This folder is a **static site** ready to publish via GitHub Pages (or Netlify, 
 site/
 ├── index.html            ← always the latest issue
 ├── archive.html          ← list of every past issue
-├── Weekly Digest - YYYY-MM-DD.pdf
+├── AI in Education Daily - YYYY-MM-DD.pdf
 └── issues/
     └── 2026-09-03.html   ← one file per issue
 ```
@@ -33,7 +33,7 @@ site/
 
 The automation will:
 
-1. Generate the new issue as `Weekly Digest - YYYY-MM-DD.html` and `Weekly Digest - YYYY-MM-DD.pdf`
+1. Generate the new issue as `Weekly Digest - YYYY-MM-DD.html` and `AI in Education Daily - YYYY-MM-DD.pdf`
 2. Copy it to `site/index.html` and `site/issues/YYYY-MM-DD.html`
 3. Prepend the new entry to the `<ol class="issue-list">` in `site/archive.html`
 4. Commit and push:
