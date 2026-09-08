@@ -269,6 +269,25 @@ a:hover { text-decoration-thickness: 2px; }
   text-align: center;
   font-style: italic;
 }
+.footer-actions {
+  margin-top: var(--gnrc-gap-composite-medium);
+  text-align: center;
+}
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 0 var(--gnrc-gap-composite-large);
+  border: var(--gnrc-stroke-width-thin) solid var(--gnrc-color-foreground-neutral-primary);
+  border-radius: var(--gnrc-border-radius-atomic-xsmall);
+  color: var(--gnrc-color-foreground-neutral-primary);
+  font-size: var(--gnrc-font-size-functional-body-small);
+  font-style: normal;
+  font-weight: var(--gnrc-font-weight-semibold);
+  text-decoration: none;
+}
+.download-button:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
@@ -279,7 +298,7 @@ a:hover { text-decoration-thickness: 2px; }
     <div class="col-hero">
       <div class="masthead">
         <span class="masthead-title">AI in Education Daily</span>
-        <span class="masthead-date">Issue &middot; September 8, 2026 &middot; <a href="archive.html">Archive</a></span>
+        <span class="masthead-date">September 8, 2026 &middot; <a href="https://berit-herstad.github.io/AI-in-Education-Newsletter/archive.html">Archive</a></span>
       </div>
     </div>
   </div>
@@ -511,6 +530,9 @@ a:hover { text-decoration-thickness: 2px; }
       <div class="colophon">
         AI in Education Daily &middot; Berit Herstad &middot;
         September 8, 2026 &middot; Compiled from public sources
+        <div class="footer-actions">
+          <a class="download-button" href="https://berit-herstad.github.io/AI-in-Education-Newsletter/Weekly%20Digest%20-%202026-09-08.pdf" download>Download PDF</a>
+        </div>
       </div>
     </div>
   </div>
