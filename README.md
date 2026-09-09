@@ -41,7 +41,7 @@ The automation will:
    cd site && git add . && git commit -m "Issue YYYY-MM-DD" && git push
    ```
 
-GitHub Pages redeploys automatically (usually within 30–60 seconds).
+GitHub Pages redeploys automatically (usually within 20–60 seconds).
 
 ## Notes
 
