@@ -63,34 +63,22 @@ h1 {
   letter-spacing: -0.01em;
   margin-bottom: 12px;
 }
-.trend p { font-size: 16px; color: var(--fg-secondary); margin-bottom: 16px; }
-.signal-row {
-  display: grid;
-  grid-template-columns: 112px 1fr;
-  gap: 24px;
-  padding-top: 12px;
-  font-size: 14px;
-}
-.signal-row + .signal-row { margin-top: 8px; }
-.signal-date {
-  font-family: var(--font-editorial);
-  font-style: italic;
+.trend-number {
+  display: inline-block;
+  min-width: 1.4em;
+  margin-right: 8px;
   color: var(--fg-tertiary);
 }
-.signal-text { color: var(--fg-primary); }
-
-.watchlist {
+.trend p { font-size: 16px; color: var(--fg-secondary); margin-bottom: 16px; }
+.meta-trend {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-size: 28px;
+  line-height: 1.3;
+  color: var(--fg-primary);
   padding: 32px 0 0;
   border-top: 1px solid var(--stroke-subtle);
 }
-.watchlist h2 {
-  font-family: var(--font-editorial);
-  font-style: italic; font-weight: 400;
-  font-size: 32px; line-height: 1.2;
-  margin-bottom: 12px;
-}
-.watchlist ul { padding-left: 20px; color: var(--fg-secondary); }
-.watchlist li + li { margin-top: 8px; }
 
 .colophon {
   margin-top: 96px; padding-top: 24px;
@@ -104,10 +92,8 @@ h1 {
   h1 { font-size: 42px; line-height: 1.15; }
   .deck { font-size: 17px; margin-bottom: 40px; }
   .trend { padding: 28px 0; }
-  .trend h2,
-  .watchlist h2 { font-size: 28px; }
-  .signal-row { grid-template-columns: 1fr; gap: 2px; }
-  .signal-text { overflow-wrap: anywhere; }
+  .trend h2 { font-size: 28px; }
+  .meta-trend { font-size: 24px; }
 }
 </style>
 </head>
@@ -122,60 +108,45 @@ h1 {
     </div>
 
     <p class="meta">Trend synthesis · 4 issues · September 3-10, 2026</p>
-    <h1>The first pattern is governance catching up to adoption.</h1>
-    <p class="deck">Across the first four issues, the story is moving from whether AI belongs in education to how institutions control, teach, assess, and explain it. These trends should be refreshed as each new issue joins the archive.</p>
+    <h1>Seven signals from the first four issues.</h1>
+    <p class="deck">The strongest pattern is that AI in education is becoming less about access to tools and more about trust, age, evidence, and governance.</p>
 
     <section class="trend">
-      <h2>Guardrails are replacing yes-or-no AI policy.</h2>
-      <p>Districts and ministries are drawing sharper lines by age, risk, assessment use, and supervision rather than treating AI as simply allowed or banned.</p>
-      <div class="signal-row"><span class="signal-date">Sep 3</span><span class="signal-text">New York City became the early symbol of student-facing restrictions for younger learners.</span></div>
-      <div class="signal-row"><span class="signal-date">Sep 8-9</span><span class="signal-text">Age gates, contracts, and Brazil's risk categories turned policy into operating rules.</span></div>
+      <h2><span class="trend-number">1</span>AI education is moving from experimentation to governance.</h2>
+      <p>Early "try AI tools" language is giving way to rules: age limits, risk categories, approved tools, assessment policies, procurement controls, and national curriculum guidance.</p>
     </section>
 
     <section class="trend">
-      <h2>AI literacy is becoming a trust problem.</h2>
-      <p>The center of gravity is shifting from tool access to whether families and educators believe classroom AI use supports learning rather than shortcuts.</p>
-      <div class="signal-row"><span class="signal-date">Sep 8</span><span class="signal-text">National curricula and teacher training became the counterweight to district restrictions.</span></div>
-      <div class="signal-row"><span class="signal-date">Sep 10</span><span class="signal-text">Educator confidence surfaced as a positive signal, but parent confidence emerged as the next adoption test.</span></div>
+      <h2><span class="trend-number">2</span>Younger students are becoming the flashpoint.</h2>
+      <p>NYC and LA restrictions, primary-school caution, and UAE/Japan curriculum design all point to the same question: what should children under roughly 14 be allowed to use, and under what supervision?</p>
     </section>
 
     <section class="trend">
-      <h2>The evidence keeps favoring guided use.</h2>
-      <p>The recurring research signal is that AI can help when it withholds answers, requires reasoning, and supports structured practice; engagement alone is not proof of learning.</p>
-      <div class="signal-row"><span class="signal-date">Sep 3-10</span><span class="signal-text">AI tutors, math support, and experiential learning looked strongest when they forced students to think.</span></div>
-      <div class="signal-row"><span class="signal-date">Sep 8-10</span><span class="signal-text">Warnings about shallow completion and engagement metrics kept the learning-evidence question open.</span></div>
+      <h2><span class="trend-number">3</span>Countries are choosing curriculum over optional toolkits.</h2>
+      <p>Brazil, the UAE, Japan, India, Mexico, Israel, and others are treating AI literacy as system-level education policy, not just something individual teachers, schools, or districts decide.</p>
     </section>
 
     <section class="trend">
-      <h2>Assessment reform is outpacing detection.</h2>
-      <p>Across higher education stories, the durable response is not better policing but redesigned tasks: process evidence, oral defense, in-class work, and AI-resistant demonstrations.</p>
-      <div class="signal-row"><span class="signal-date">Sep 3</span><span class="signal-text">AI detection was already framed as fading in importance.</span></div>
-      <div class="signal-row"><span class="signal-date">Sep 8-10</span><span class="signal-text">Global university coverage reinforced assessment design as the practical answer to cheating anxiety.</span></div>
+      <h2><span class="trend-number">4</span>Teacher readiness is now the bottleneck.</h2>
+      <p>Nearly every "AI rollout" story also includes teacher training, confidence, or implementation capacity. The theme is shifting from "students need AI literacy" to "teachers need institutional support."</p>
     </section>
 
     <section class="trend">
-      <h2>Teacher enablement is becoming infrastructure.</h2>
-      <p>AI rollout is increasingly bundled with educator training, curriculum design, and professional credentials, not just platform access.</p>
-      <div class="signal-row"><span class="signal-date">Sep 8-10</span><span class="signal-text">India, the UAE, Japan, and platform providers all pointed toward training and curriculum as the adoption layer.</span></div>
-      <div class="signal-row"><span class="signal-date">Sep 10</span><span class="signal-text">Professional-learning signals, including AI academies and credentials, expanded the trend beyond schools.</span></div>
+      <h2><span class="trend-number">5</span>Assessment is moving away from detection.</h2>
+      <p>Higher ed stories keep pointing in the same direction: AI detectors are not enough. Institutions are redesigning assignments around process, oral defense, in-class work, and demonstrated reasoning.</p>
     </section>
 
     <section class="trend">
-      <h2>Platforms are moving from chatbots to learning systems.</h2>
-      <p>The product signal is shifting toward tutoring workflows, practice builders, textbook alignment, training academies, and AI-enabled learning environments.</p>
-      <div class="signal-row"><span class="signal-date">Sep 3-9</span><span class="signal-text">Khanmigo, Discovery Education, Gauth, YoLearn.ai, and agentic AI credentials showed platform expansion.</span></div>
-      <div class="signal-row"><span class="signal-date">Sep 10</span><span class="signal-text">AI academies and profitable AI-focused education companies suggested packaging and scale are becoming central.</span></div>
+      <h2><span class="trend-number">6</span>AI tutoring is promising, but only when it slows students down.</h2>
+      <p>The strongest evidence thread is that AI helps when it prompts reasoning and withholds answers, and harms when it accelerates shallow completion.</p>
     </section>
 
-    <section class="watchlist">
-      <h2>What to watch next.</h2>
-      <ul>
-        <li>Whether parent trust becomes an explicit metric in district AI rollouts.</li>
-        <li>Whether risk categories become the common policy language across countries.</li>
-        <li>Whether tutor products publish stronger learning evidence, not just engagement or usage.</li>
-        <li>Whether assessment redesign becomes standard operating practice in higher education.</li>
-      </ul>
+    <section class="trend">
+      <h2><span class="trend-number">7</span>AI education is merging with workforce strategy.</h2>
+      <p>Professional learning, AI academies, university credentials, and employer-linked training are appearing alongside K-12 policy. Education systems are framing AI literacy as employability infrastructure.</p>
     </section>
+
+    <p class="meta-trend">The big meta-trend: AI in education is becoming less about access to tools and more about trust, age, evidence, and governance.</p>
 
     <div class="colophon">AI in Education Daily &middot; Trends updated September 10, 2026</div>
   </div>
