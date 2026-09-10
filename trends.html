@@ -4,221 +4,110 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Trends · AI in Education Daily</title>
-<script>
-  (() => {
-    const param = new URLSearchParams(window.location.search).get("scoutTheme");
-    const theme =
-      param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-    document.documentElement.setAttribute("data-theme", theme);
-  })();
-</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
 <style>
 :root {
-  color-scheme: light;
-  --cp-bg: #f7f4ef;
-  --cp-bg-elevated: #fcfbf8;
-  --cp-surface: #ffffff;
-  --cp-surface-soft: #f5f5f5;
-  --cp-border: #dedede;
-  --cp-border-strong: #919191;
-  --cp-text: #242424;
-  --cp-text-muted: #5c5c5c;
-  --cp-text-soft: #6f6f6f;
-  --cp-accent: #b11f4b;
-  --cp-accent-hover: #9a1a41;
-  --cp-accent-soft: rgba(177, 31, 75, 0.08);
-  --cp-accent-fg: #ffffff;
-  --cp-success: #16a34a;
-  --cp-danger: #dc2626;
-  --cp-warning: #f59e0b;
-  --cp-link: #0078d4;
-  --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.12);
-  --cp-overlay: rgba(255, 255, 255, 0.8);
-  --cp-panel: rgba(255, 255, 255, 0.86);
-  --cp-panel-strong: rgba(255, 255, 255, 0.96);
-  --cp-sheen: rgba(255, 255, 255, 0.55);
-  --cp-highlight: rgba(177, 31, 75, 0.12);
-}
-html[data-theme="dark"] {
-  color-scheme: dark;
-  --cp-bg: #3d3b3a;
-  --cp-bg-elevated: #343231;
-  --cp-surface: #292929;
-  --cp-surface-soft: #2e2e2e;
-  --cp-border: #474747;
-  --cp-border-strong: #5f5f5f;
-  --cp-text: #dedede;
-  --cp-text-muted: #919191;
-  --cp-text-soft: #b0b0b0;
-  --cp-accent: #fd8ea1;
-  --cp-accent-hover: #fb7b91;
-  --cp-accent-soft: rgba(253, 142, 161, 0.14);
-  --cp-accent-fg: #1a1a1a;
-  --cp-success: #4ade80;
-  --cp-danger: #f87171;
-  --cp-warning: #fbbf24;
-  --cp-link: #4da6ff;
-  --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.32);
-  --cp-overlay: rgba(41, 41, 41, 0.88);
-  --cp-panel: rgba(41, 41, 41, 0.72);
-  --cp-panel-strong: rgba(41, 41, 41, 0.96);
-  --cp-sheen: rgba(255, 255, 255, 0.04);
-  --cp-highlight: rgba(253, 142, 161, 0.12);
+  --font-content:   'Segoe UI Variable', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-editorial: 'Segoe Serif', 'Lora', Georgia, serif;
+  --fg-primary:   #242424;
+  --fg-secondary: #555555;
+  --fg-tertiary:  #777777;
+  --stroke-subtle:#EBEBEB;
+  --surface:      #FFFFFF;
 }
 *,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
-html {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
 body {
-  font-family: "Segoe UI", Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif;
-  color: var(--cp-text);
-  background: var(--cp-bg);
+  font-family: var(--font-content);
+  color: var(--fg-primary);
+  background: var(--surface);
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
-  width: 100%;
-  overflow-x: hidden;
+  -moz-osx-font-smoothing: grayscale;
 }
-.doc { width: 100%; max-width: 1020px; margin: 0 auto; padding: 64px 16px; overflow-x: clip; }
-.wrap { width: 100%; max-width: 760px; margin: 0 auto; }
+.doc { max-width: 1020px; margin: 0 auto; padding: 64px 16px; }
+.wrap { max-width: 736px; margin: 0 auto; }
+
 .masthead {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  gap: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px solid var(--cp-text);
+  border-bottom: 1px solid var(--fg-primary);
   margin-bottom: 32px;
 }
 .masthead-title { font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; }
-.masthead-links { font-size: 14px; color: var(--cp-text-muted); }
-a { color: var(--cp-text); text-decoration: underline; text-underline-offset: 3px; }
-a:hover { color: var(--cp-accent); }
+.masthead-links { font-size: 14px; color: var(--fg-secondary); }
+a { color: var(--fg-primary); text-decoration: underline; text-underline-offset: 3px; }
+
 h1 {
-  font-family: "Segoe Serif", "Lora", Georgia, serif;
-  font-style: italic;
-  font-weight: 400;
-  font-size: clamp(44px, 8vw, 72px);
-  line-height: 1.05;
+  font-family: var(--font-editorial);
+  font-style: italic; font-weight: 400;
+  font-size: 56px; line-height: 1.2;
   letter-spacing: -0.025em;
   margin-bottom: 16px;
 }
-.deck { font-size: 18px; color: var(--cp-text-muted); max-width: 640px; margin-bottom: 48px; }
-.meta { font-size: 13px; color: var(--cp-text-soft); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 12px; }
+.deck { font-size: 18px; color: var(--fg-secondary); max-width: 620px; margin-bottom: 64px; }
+.meta { font-size: 14px; color: var(--fg-tertiary); margin-bottom: 16px; }
+
 .trend {
-  background: var(--cp-surface);
-  border: 1px solid var(--cp-border);
-  border-radius: 16px;
-  padding: 24px;
-  margin-bottom: 16px;
-  box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.14);
-  max-width: 100%;
+  padding: 32px 0;
+  border-top: 1px solid var(--stroke-subtle);
 }
+.trend:first-of-type { padding-top: 0; }
 .trend h2 {
-  font-family: "Segoe Serif", "Lora", Georgia, serif;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 1.2;
-  margin-bottom: 8px;
-}
-.trend p { color: var(--cp-text-muted); margin-bottom: 14px; }
-.trend,
-.signal-text,
-.watchlist {
-  overflow-wrap: anywhere;
-}
-.signal-row {
-  display: grid;
-  grid-template-columns: 108px 1fr;
-  gap: 16px;
-  padding-top: 14px;
-  border-top: 1px solid var(--cp-border);
-  font-size: 14px;
-}
-.signal-row + .signal-row { margin-top: 14px; }
-.signal-date { color: var(--cp-accent); font-weight: 600; }
-.signal-text { color: var(--cp-text); }
-.watchlist {
-  background: var(--cp-accent-soft);
-  border: 1px solid var(--cp-border);
-  border-radius: 16px;
-  padding: 24px;
-  margin-top: 32px;
-  max-width: 100%;
-}
-.watchlist h2 {
-  font-family: "Segoe Serif", "Lora", Georgia, serif;
-  font-style: italic;
-  font-weight: 400;
-  font-size: 32px;
+  font-family: var(--font-editorial);
+  font-style: italic; font-weight: 400;
+  font-size: 32px; line-height: 1.2;
+  letter-spacing: -0.01em;
   margin-bottom: 12px;
 }
-.watchlist ul { padding-left: 20px; color: var(--cp-text-muted); }
-.watchlist li + li { margin-top: 8px; }
-.colophon {
-  margin-top: 72px;
-  padding-top: 24px;
-  border-top: 1px solid var(--cp-border);
+.trend p { font-size: 16px; color: var(--fg-secondary); margin-bottom: 16px; }
+.signal-row {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  gap: 24px;
+  padding-top: 12px;
   font-size: 14px;
-  color: var(--cp-text-soft);
-  text-align: center;
+}
+.signal-row + .signal-row { margin-top: 8px; }
+.signal-date {
+  font-family: var(--font-editorial);
   font-style: italic;
+  color: var(--fg-tertiary);
+}
+.signal-text { color: var(--fg-primary); }
+
+.watchlist {
+  padding: 32px 0 0;
+  border-top: 1px solid var(--stroke-subtle);
+}
+.watchlist h2 {
+  font-family: var(--font-editorial);
+  font-style: italic; font-weight: 400;
+  font-size: 32px; line-height: 1.2;
+  margin-bottom: 12px;
+}
+.watchlist ul { padding-left: 20px; color: var(--fg-secondary); }
+.watchlist li + li { margin-top: 8px; }
+
+.colophon {
+  margin-top: 96px; padding-top: 24px;
+  border-top: 1px solid var(--stroke-subtle);
+  font-size: 14px; color: var(--fg-tertiary);
+  text-align: center; font-style: italic;
 }
 @media (max-width: 640px) {
   .doc { padding: 40px 16px; }
-  .masthead { flex-direction: column; gap: 8px; }
-  .signal-row { grid-template-columns: 1fr; gap: 4px; }
-}
-@media (max-width: 480px) {
-  .doc { padding: 28px 12px; }
-  .masthead {
-    margin-bottom: 24px;
-    padding-bottom: 18px;
-  }
-  .masthead-title {
-    font-size: 12px;
-    letter-spacing: 0.1em;
-  }
-  .masthead-links { font-size: 13px; }
-  h1 {
-    font-size: 36px;
-    line-height: 1.08;
-  }
-  .deck {
-    font-size: 16px;
-    margin-bottom: 28px;
-  }
-  .meta {
-    font-size: 11px;
-    letter-spacing: 0.08em;
-  }
-  .trend {
-    padding: 16px;
-    border-radius: 0.625rem;
-    margin-bottom: 12px;
-  }
-  .trend h2 {
-    font-size: 24px;
-    line-height: 1.18;
-  }
-  .trend p,
-  .signal-row,
-  .watchlist,
-  .colophon {
-    font-size: 14px;
-  }
-  .signal-row {
-    padding-top: 12px;
-  }
-  .watchlist {
-    padding: 16px;
-    border-radius: 0.625rem;
-    margin-top: 24px;
-  }
-  .watchlist h2 { font-size: 26px; }
-  .watchlist ul { padding-left: 18px; }
-  .colophon { margin-top: 48px; }
+  .masthead { flex-direction: column; align-items: flex-start; gap: 8px; }
+  h1 { font-size: 42px; line-height: 1.15; }
+  .deck { font-size: 17px; margin-bottom: 40px; }
+  .trend { padding: 28px 0; }
+  .trend h2,
+  .watchlist h2 { font-size: 28px; }
+  .signal-row { grid-template-columns: 1fr; gap: 2px; }
+  .signal-text { overflow-wrap: anywhere; }
 }
 </style>
 </head>
