@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trends · AI in Education Daily</title>
+<script>
+  (() => {
+    const param = new URLSearchParams(window.location.search).get("scoutTheme");
+    const theme =
+      param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+</script>
+<style>
+:root {
+  color-scheme: light;
+  --cp-bg: #f7f4ef;
+  --cp-bg-elevated: #fcfbf8;
+  --cp-surface: #ffffff;
+  --cp-surface-soft: #f5f5f5;
+  --cp-border: #dedede;
+  --cp-border-strong: #919191;
+  --cp-text: #242424;
+  --cp-text-muted: #5c5c5c;
+  --cp-text-soft: #6f6f6f;
+  --cp-accent: #b11f4b;
+  --cp-accent-hover: #9a1a41;
+  --cp-accent-soft: rgba(177, 31, 75, 0.08);
+  --cp-accent-fg: #ffffff;
+  --cp-success: #16a34a;
+  --cp-danger: #dc2626;
+  --cp-warning: #f59e0b;
+  --cp-link: #0078d4;
+  --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.12);
+  --cp-overlay: rgba(255, 255, 255, 0.8);
+  --cp-panel: rgba(255, 255, 255, 0.86);
+  --cp-panel-strong: rgba(255, 255, 255, 0.96);
+  --cp-sheen: rgba(255, 255, 255, 0.55);
+  --cp-highlight: rgba(177, 31, 75, 0.12);
+}
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --cp-bg: #3d3b3a;
+  --cp-bg-elevated: #343231;
+  --cp-surface: #292929;
+  --cp-surface-soft: #2e2e2e;
+  --cp-border: #474747;
+  --cp-border-strong: #5f5f5f;
+  --cp-text: #dedede;
+  --cp-text-muted: #919191;
+  --cp-text-soft: #b0b0b0;
+  --cp-accent: #fd8ea1;
+  --cp-accent-hover: #fb7b91;
+  --cp-accent-soft: rgba(253, 142, 161, 0.14);
+  --cp-accent-fg: #1a1a1a;
+  --cp-success: #4ade80;
+  --cp-danger: #f87171;
+  --cp-warning: #fbbf24;
+  --cp-link: #4da6ff;
+  --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.32);
+  --cp-overlay: rgba(41, 41, 41, 0.88);
+  --cp-panel: rgba(41, 41, 41, 0.72);
+  --cp-panel-strong: rgba(41, 41, 41, 0.96);
+  --cp-sheen: rgba(255, 255, 255, 0.04);
+  --cp-highlight: rgba(253, 142, 161, 0.12);
+}
+*,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "Segoe UI", Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--cp-text);
+  background: var(--cp-bg);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+.doc { max-width: 1020px; margin: 0 auto; padding: 64px 16px; }
+.wrap { max-width: 760px; margin: 0 auto; }
+.masthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--cp-text);
+  margin-bottom: 32px;
+}
+.masthead-title { font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; }
+.masthead-links { font-size: 14px; color: var(--cp-text-muted); }
+a { color: var(--cp-text); text-decoration: underline; text-underline-offset: 3px; }
+a:hover { color: var(--cp-accent); }
+h1 {
+  font-family: "Segoe Serif", "Lora", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(44px, 8vw, 72px);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  margin-bottom: 16px;
+}
+.deck { font-size: 18px; color: var(--cp-text-muted); max-width: 640px; margin-bottom: 48px; }
+.meta { font-size: 13px; color: var(--cp-text-soft); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 12px; }
+.trend {
+  background: var(--cp-surface);
+  border: 1px solid var(--cp-border);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 16px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.14);
+}
+.trend h2 {
+  font-family: "Segoe Serif", "Lora", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+.trend p { color: var(--cp-text-muted); margin-bottom: 14px; }
+.signal-row {
+  display: grid;
+  grid-template-columns: 108px 1fr;
+  gap: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--cp-border);
+  font-size: 14px;
+}
+.signal-row + .signal-row { margin-top: 14px; }
+.signal-date { color: var(--cp-accent); font-weight: 600; }
+.signal-text { color: var(--cp-text); }
+.watchlist {
+  background: var(--cp-accent-soft);
+  border: 1px solid var(--cp-border);
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 32px;
+}
+.watchlist h2 {
+  font-family: "Segoe Serif", "Lora", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+.watchlist ul { padding-left: 20px; color: var(--cp-text-muted); }
+.watchlist li + li { margin-top: 8px; }
+.colophon {
+  margin-top: 72px;
+  padding-top: 24px;
+  border-top: 1px solid var(--cp-border);
+  font-size: 14px;
+  color: var(--cp-text-soft);
+  text-align: center;
+  font-style: italic;
+}
+@media (max-width: 640px) {
+  .doc { padding: 40px 16px; }
+  .masthead { flex-direction: column; gap: 8px; }
+  .signal-row { grid-template-columns: 1fr; gap: 4px; }
+}
+</style>
+</head>
+<body>
+<div class="doc">
+  <div class="wrap">
+    <div class="masthead">
+      <span class="masthead-title">AI in Education Daily</span>
+      <span class="masthead-links">
+        <a href="index.html">Latest issue</a> &middot; <a href="archive.html">Archive</a>
+      </span>
+    </div>
+
+    <p class="meta">Trend synthesis · 4 issues · September 3-10, 2026</p>
+    <h1>The first pattern is governance catching up to adoption.</h1>
+    <p class="deck">Across the first four issues, the story is moving from whether AI belongs in education to how institutions control, teach, assess, and explain it. These trends should be refreshed as each new issue joins the archive.</p>
+
+    <section class="trend">
+      <h2>Guardrails are replacing yes-or-no AI policy.</h2>
+      <p>Districts and ministries are drawing sharper lines by age, risk, assessment use, and supervision rather than treating AI as simply allowed or banned.</p>
+      <div class="signal-row"><span class="signal-date">Sep 3</span><span class="signal-text">New York City became the early symbol of student-facing restrictions for younger learners.</span></div>
+      <div class="signal-row"><span class="signal-date">Sep 8-9</span><span class="signal-text">Age gates, contracts, and Brazil's risk categories turned policy into operating rules.</span></div>
+    </section>
+
+    <section class="trend">
+      <h2>AI literacy is becoming a trust problem.</h2>
+      <p>The center of gravity is shifting from tool access to whether families and educators believe classroom AI use supports learning rather than shortcuts.</p>
+      <div class="signal-row"><span class="signal-date">Sep 8</span><span class="signal-text">National curricula and teacher training became the counterweight to district restrictions.</span></div>
+      <div class="signal-row"><span class="signal-date">Sep 10</span><span class="signal-text">Educator confidence surfaced as a positive signal, but parent confidence emerged as the next adoption test.</span></div>
+    </section>
+
+    <section class="trend">
+      <h2>The evidence keeps favoring guided use.</h2>
+      <p>The recurring research signal is that AI can help when it withholds answers, requires reasoning, and supports structured practice; engagement alone is not proof of learning.</p>
+      <div class="signal-row"><span class="signal-date">Sep 3-10</span><span class="signal-text">AI tutors, math support, and experiential learning looked strongest when they forced students to think.</span></div>
+      <div class="signal-row"><span class="signal-date">Sep 8-10</span><span class="signal-text">Warnings about shallow completion and engagement metrics kept the learning-evidence question open.</span></div>
+    </section>
+
+    <section class="trend">
+      <h2>Assessment reform is outpacing detection.</h2>
+      <p>Across higher education stories, the durable response is not better policing but redesigned tasks: process evidence, oral defense, in-class work, and AI-resistant demonstrations.</p>
+      <div class="signal-row"><span class="signal-date">Sep 3</span><span class="signal-text">AI detection was already framed as fading in importance.</span></div>
+      <div class="signal-row"><span class="signal-date">Sep 8-10</span><span class="signal-text">Global university coverage reinforced assessment design as the practical answer to cheating anxiety.</span></div>
+    </section>
+
+    <section class="trend">
+      <h2>Teacher enablement is becoming infrastructure.</h2>
+      <p>AI rollout is increasingly bundled with educator training, curriculum design, and professional credentials, not just platform access.</p>
+      <div class="signal-row"><span class="signal-date">Sep 8-10</span><span class="signal-text">India, the UAE, Japan, and platform providers all pointed toward training and curriculum as the adoption layer.</span></div>
+      <div class="signal-row"><span class="signal-date">Sep 10</span><span class="signal-text">Professional-learning signals, including AI academies and credentials, expanded the trend beyond schools.</span></div>
+    </section>
+
+    <section class="trend">
+      <h2>Platforms are moving from chatbots to learning systems.</h2>
+      <p>The product signal is shifting toward tutoring workflows, practice builders, textbook alignment, training academies, and AI-enabled learning environments.</p>
+      <div class="signal-row"><span class="signal-date">Sep 3-9</span><span class="signal-text">Khanmigo, Discovery Education, Gauth, YoLearn.ai, and agentic AI credentials showed platform expansion.</span></div>
+      <div class="signal-row"><span class="signal-date">Sep 10</span><span class="signal-text">AI academies and profitable AI-focused education companies suggested packaging and scale are becoming central.</span></div>
+    </section>
+
+    <section class="watchlist">
+      <h2>What to watch next.</h2>
+      <ul>
+        <li>Whether parent trust becomes an explicit metric in district AI rollouts.</li>
+        <li>Whether risk categories become the common policy language across countries.</li>
+        <li>Whether tutor products publish stronger learning evidence, not just engagement or usage.</li>
+        <li>Whether assessment redesign becomes standard operating practice in higher education.</li>
+      </ul>
+    </section>
+
+    <div class="colophon">AI in Education Daily &middot; Trends updated September 10, 2026</div>
+  </div>
+</div>
+</body>
+</html>
