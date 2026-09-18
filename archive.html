@@ -100,18 +100,26 @@ h1 {
   font-size: 14px; color: var(--fg-tertiary);
   text-align: center; font-style: italic;
 }
+.digest-header{display:flex;flex-direction:column}
+.digest-brand{display:flex;align-items:center;gap:14px;margin-bottom:34px}
+.digest-brand-mark{width:44px;height:44px;display:block;flex-shrink:0}
+.digest-brand-name{font-family:var(--font-editorial);font-size:30px;font-weight:600;line-height:1.15;letter-spacing:-.02em;color:#242424}
+.digest-tabs-sticky{position:sticky;top:0;z-index:20;background:#fff;box-shadow:0 12px 18px rgba(255,255,255,.92);margin-bottom:48px}
+.digest-tabs{display:flex;align-items:flex-end;gap:0;border-bottom:1px solid #555;overflow-x:auto;background:#fff}
+.digest-tab{position:relative;display:inline-flex;align-items:center;min-height:42px;padding:0 18px;color:#555;font-family:var(--font-content);font-size:14px;font-weight:400;text-decoration:none;white-space:nowrap}
+.digest-tab:first-child{padding-left:0}
+.digest-tab:hover{color:#242424;text-decoration:none}
+.digest-tab.is-active{color:#242424}
+.digest-tab.is-active::after{content:'';position:absolute;left:0;right:0;bottom:-1px;height:3px;background:#555}
+@media(max-width:580px){.digest-brand{gap:10px;margin-bottom:26px}.digest-brand-mark{width:34px;height:34px}.digest-brand-name{font-size:25px}.digest-tab{padding:0 14px;min-height:40px}.digest-tab:first-child{padding-left:0}}
 </style>
 </head>
 <body>
 <div class="doc">
   <div class="wrap">
 
-    <div class="masthead">
-      <span class="masthead-title">AI in Education Daily</span>
-      <span class="masthead-links">
-        <a href="index.html">Latest issue</a> &middot; <a href="trends.html">Trends</a>
-      </span>
-    </div>
+    <header class="digest-header"><div class="digest-brand"><svg class="digest-brand-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 10 L44 18 L24 26 L4 18 Z" fill="#171717"/><path d="M12 22 L24 27 L36 22 L36 31 C36 34 30.6 37 24 37 C17.4 37 12 34 12 31 Z" fill="#171717"/><path d="M41 18 L41 30" stroke="#171717" stroke-width="1.8" fill="none" stroke-linecap="round"/><circle cx="41" cy="31.5" r="2.4" fill="#171717"/></svg><span class="digest-brand-name">AI in Education Daily</span></div></header>
+    <div class="digest-tabs-sticky"><nav class="digest-tabs" aria-label="Sections"><a class="digest-tab" href="https://berit-herstad.github.io/AI-in-Education-Newsletter/index.html">Latest Issue</a><a class="digest-tab" href="https://berit-herstad.github.io/AI-in-Education-Newsletter/trends.html">Trends</a><a class="digest-tab is-active" href="https://berit-herstad.github.io/AI-in-Education-Newsletter/archive.html">Archive</a></nav></div>
 
     <h1>Archive.</h1>
     <p class="deck">Every issue of <em>AI in Education Daily</em>, most recent first.</p>
