@@ -18,6 +18,14 @@ The significance is scale. This is not a course-level AI policy or an academic-i
 
 <u>[EDUCAUSE Review](https://er.educause.edu/articles/2026/9/the-agentic-professor-exploring-genai-supported-futures-in-higher-education)</u> explored “the agentic professor” as a way to imagine scalable, personalized instructional support in higher education.
 
+## Nordic Focus
+
+🇳🇴 Norway remains the Nordic reference point: coverage of New York City’s ban repeatedly noted Norway had already barred generative AI from primary schools nationwide, exposing a gap in the EU’s own AI rulebook. <u>[Euronews](https://www.euronews.com/next/2026/09/03/before-new-york-city-norway-had-already-banned-ai-in-schools)</u>
+
+🇳🇴 Oslo banned camera-equipped smart glasses in schools to stop children becoming “extras in Meta’s data collection,” part of Norway’s wider push to regulate wearable AI and facial recognition. <u>[The Local Norway](https://www.thelocal.no/20260910/oslo-bans-smart-glasses-in-schools)</u>
+
+🇩🇰 Denmark leans on oral defense against AI cheating: secondary schools require oral defenses of written take-home work and monitor screen use during in-school exams — a proof-of-learning approach now echoing globally. <u>[Euronews](https://www.euronews.com/next/2026/08/07/denmark-tightens-rules-on-secondary-school-students-to-prevent-ai-cheating)</u>
+
 ## Around the Globe
 
 🇺🇸 Florida set new rules for how K-12 students and teachers can use AI. <u>[Miami Herald on MSN](https://www.msn.com/en-us/technology/artificial-intelligence/florida-sets-new-rules-for-how-students-teachers-can-use-ai-here-s-what-to-know/ar-AA2cnjwW)</u>
