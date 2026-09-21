@@ -78,7 +78,7 @@ a:hover { text-decoration-thickness: 2px; }
 .quote-body { font-family: var(--gnrc-font-family-content-editorial); font-style: italic; font-size: var(--gnrc-font-size-content-expressive-medium); line-height: var(--gnrc-line-height-content-expressive); }
 .kicker { font-size: var(--gnrc-font-size-functional-body-small); font-weight: var(--gnrc-font-weight-semibold); text-transform: uppercase; letter-spacing: 0.12em; color: var(--gnrc-color-foreground-neutral-tertiary); }
 .story { display: flex; flex-direction: column; gap: var(--gnrc-gap-atomic-medium); padding-top: var(--gnrc-gap-composite-large); border-top: var(--gnrc-stroke-width-thin) solid var(--gnrc-color-stroke-neutral-subtle); }
-.story:first-child { padding-top: 0; border-top: 0; }
+.story:first-child,h2+.story{padding-top:0;border-top:0}
 .story-headline { font-size: var(--gnrc-font-size-content-paragraph-large); font-weight: var(--gnrc-font-weight-semibold); line-height: 1.35; }
 .story-flag { display: inline-block; font-size: var(--gnrc-font-size-functional-caption); font-weight: var(--gnrc-font-weight-semibold); letter-spacing: 0.08em; text-transform: uppercase; color: var(--gnrc-color-foreground-neutral-tertiary); margin-right: var(--gnrc-gap-atomic-medium); }
 .story-sources { font-size: var(--gnrc-font-size-content-paragraph-small); color: var(--gnrc-color-foreground-neutral-secondary); }
