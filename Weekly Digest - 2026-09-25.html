@@ -33,7 +33,7 @@
 <div class="grid digest-backrow-grid"><div class="col-hero"><a class="back-to-archive" href="https://berit-herstad.github.io/AI-in-Education-Newsletter/archive.html"><span aria-hidden="true">←</span> Back to Archive</a></div></div>
 <div class="grid digest-date-grid"><div class="col-hero"><div class="digest-date">September 25, 2026</div></div></div>
 <div class="grid"><div class="col-hero"><h1 class="pageheader">The day AI literacy became school infrastructure.</h1><p class="deck">Abu Dhabi’s KG–12 framework shows how AI education is moving from tool access to curriculum, testing, teacher training, and safeguards. Elsewhere, schools are reaching the same conclusion: AI readiness now means governance, not gadgets.</p><div class="issue-actions">
-<button class="listen-action" type="button" data-audio-toggle aria-controls="digest-audio" aria-label="Listen to this issue"><span class="listen-action-icon listen-action-icon--play" data-audio-icon aria-hidden="true">▶</span><span data-audio-label>Listen · 4 min</span></button>
+<button class="listen-action" type="button" data-audio-toggle data-duration-label="2:45" aria-controls="digest-audio" aria-label="Listen to this issue"><span class="listen-action-icon listen-action-icon--play" data-audio-icon aria-hidden="true">▶</span><span data-audio-label>Listen · 2:45</span></button>
 </div><audio id="digest-audio" preload="metadata" src="audio/ai-education-digest-2026-09-25.m4a"></audio></div></div>
 <div class="grid"><div class="col-full"><div class="section-break"><span class="section-break-badge">1</span><span class="section-break-line"></span><span class="section-break-label">Top story</span></div></div></div>
 <div class="grid"><div class="col-hero"><span class="kicker">UAE · Systemwide AI literacy</span><h2>Abu Dhabi turns AI literacy into a full school operating model.</h2></div></div>
@@ -57,7 +57,8 @@ const listenLabel=document.querySelector('[data-audio-label]');
 const listenIcon=document.querySelector('[data-audio-icon]');
 const digestAudio=document.getElementById('digest-audio');
 if(!listenButton||!listenLabel||!listenIcon||!digestAudio)return;
-listenButton.addEventListener('click',async()=>{if(digestAudio.paused){await digestAudio.play();listenLabel.textContent='Pause · 4 min';listenIcon.textContent='❚❚';}else{digestAudio.pause();listenLabel.textContent='Listen · 4 min';listenIcon.textContent='▶';}});
-digestAudio.addEventListener('ended',()=>{listenLabel.textContent='Listen · 4 min';listenIcon.textContent='▶';});
+const duration=listenButton.getAttribute('data-duration-label')||'audio';
+listenButton.addEventListener('click',async()=>{if(digestAudio.paused){await digestAudio.play();listenLabel.textContent='Pause · '+duration;listenIcon.textContent='❚❚';}else{digestAudio.pause();listenLabel.textContent='Listen · '+duration;listenIcon.textContent='▶';}});
+digestAudio.addEventListener('ended',()=>{listenLabel.textContent='Listen · '+duration;listenIcon.textContent='▶';});
 })();
 </script></body></html>

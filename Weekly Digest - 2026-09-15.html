@@ -26,7 +26,7 @@
 <body><div class="doc">
 <div class="grid"><div class="col-hero"><div class="masthead"><span class="masthead-title">AI in Education Daily</span><span class="masthead-date">September 15, 2026 &middot; <a href="https://berit-herstad.github.io/AI-in-Education-Newsletter/archive.html">Archive</a> &middot; <a href="https://berit-herstad.github.io/AI-in-Education-Newsletter/trends.html">Trends</a></span></div></div></div>
 <div class="grid"><div class="col-hero"><h1 class="pageheader">The day unclear AI policy became the story.</h1><p class="deck">After a week of safety standards, teacher guides, curriculum rollouts, and student restrictions, the biggest signal is that schools still do not have policies teachers can actually use.</p><div class="issue-actions">
-<button class="listen-action" type="button" data-audio-toggle aria-controls="digest-audio" aria-label="Listen to this issue"><span class="listen-action-icon listen-action-icon--play" data-audio-icon aria-hidden="true">▶</span><span data-audio-label>Listen · 4 min</span></button>
+<button class="listen-action" type="button" data-audio-toggle data-duration-label="3:13" aria-controls="digest-audio" aria-label="Listen to this issue"><span class="listen-action-icon listen-action-icon--play" data-audio-icon aria-hidden="true">▶</span><span data-audio-label>Listen · 3:13</span></button>
 </div><audio id="digest-audio" preload="metadata" src="audio/ai-education-digest-2026-09-15.m4a"></audio></div></div>
 <div class="grid"><div class="col-full"><div class="section-break"><span class="section-break-badge">1</span><span class="section-break-line"></span><span class="section-break-label">Top story</span></div></div></div>
 <div class="grid"><div class="col-hero"><span class="kicker">Stanford AI Index &middot; Policy clarity</span><h2>Only 6% of teachers say their school’s AI policy is clear.</h2></div></div>
@@ -48,7 +48,8 @@ const listenLabel=document.querySelector('[data-audio-label]');
 const listenIcon=document.querySelector('[data-audio-icon]');
 const digestAudio=document.getElementById('digest-audio');
 if(!listenButton||!listenLabel||!listenIcon||!digestAudio)return;
-listenButton.addEventListener('click',async()=>{if(digestAudio.paused){await digestAudio.play();listenLabel.textContent='Pause · 4 min';listenIcon.textContent='❚❚';}else{digestAudio.pause();listenLabel.textContent='Listen · 4 min';listenIcon.textContent='▶';}});
-digestAudio.addEventListener('ended',()=>{listenLabel.textContent='Listen · 4 min';listenIcon.textContent='▶';});
+const duration=listenButton.getAttribute('data-duration-label')||'audio';
+listenButton.addEventListener('click',async()=>{if(digestAudio.paused){await digestAudio.play();listenLabel.textContent='Pause · '+duration;listenIcon.textContent='❚❚';}else{digestAudio.pause();listenLabel.textContent='Listen · '+duration;listenIcon.textContent='▶';}});
+digestAudio.addEventListener('ended',()=>{listenLabel.textContent='Listen · '+duration;listenIcon.textContent='▶';});
 })();
 </script></body></html>
