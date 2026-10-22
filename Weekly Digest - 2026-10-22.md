@@ -1,45 +1,47 @@
-# Assessment is becoming the front line of AI in education
+# Schools are moving from AI adoption to AI-proof assessment
 
-This week’s strongest signal is that schools are shifting from AI access debates to evidence debates: what counts as student learning when AI can generate polished work in minutes.
+Across K-12, higher education, and professional training, the week’s strongest signal is a pivot from “whether to use AI” to “how to prove learning when AI is available.”
 
 ## 1. Top Story
 
-Vietnamese educators say AI is forcing a major rethink of teaching and assessment. In reporting from Hà Nội, schools and university centres describe a shift from grading final products to evaluating reasoning, revision, source checking, and oral explanation of AI-assisted work, according to <u>[Vietnam News](https://vietnamnews.vn/society/1802270/ai-forces-teachers-to-rethink-teaching-and-assessment.html)</u>.
+New reporting from Vietnam shows educators redesigning assignments around process, not polish: students submit draft stages, critique AI outputs, and explain reasoning orally so teachers can evaluate understanding directly. <u>[Vietnam News](https://vietnamnews.vn/society/1802270/ai-forces-teachers-to-rethink-teaching-and-assessment.html)</u>.
 
-That shift mirrors a wider global pattern: if AI can produce competent first drafts instantly, assessment has to capture thinking quality and independent judgment, not just output quality.
+The same pattern is visible elsewhere: AI can speed production, but schools increasingly treat independent judgment, source verification, and transfer of knowledge as the skills that count most.
 
 ## 2. Research & Evidence
 
-**Medical AI education lacks a shared curriculum.** A national survey found internal medicine residency programmes aware of the need for AI instruction but constrained by limited faculty expertise and rapidly changing tools. <u>[BIOENGINEER](https://bioengineer.org/us-medical-residencies-are-flying-blind-on-ai-training-national-survey-finds/)</u>.
+**Learning science over hype.** A new Inside Higher Ed piece argues institutions should anchor AI choices in established evidence about how people learn. <u>[Inside Higher Ed](https://www.insidehighered.com/opinion/views/2026/10/22/science-learning-should-guide-ai-use-decisions-opinion)</u>.
 
-**AI-era medical education is being redesigned.** OpenEvidence and Johns Hopkins Medicine announced collaboration on clinical training that protects reasoning and evidence use. <u>[Unite.AI](https://www.unite.ai/openevidence-johns-hopkins-medicine-partner-on-ai-education-and-care/)</u>.
+**Australia’s evidence-led warning.** AERO guidance says AI can help, but overuse can displace core cognition; schools are urged to set clearer expectations and revisit assessment design. <u>[The Educator](https://www.theeducatoronline.com/k12/news/schools-get-new-guidance-on-the-use-of-ai-in-classrooms/289272)</u>.
 
-**Teacher upskilling is scaling nationally.** The Philippines’ Google AI Educator Series rollout with DepEd, CHED, and TESDA positions practical AI training as system-level professional development. <u>[CoinGeek](https://coingeek.com/google-partners-with-deped-ched-tesda-to-launch-ai-educator-series-for-filipino-teachers/)</u>.
+**Teacher upskilling at national scale.** The Philippines’ Google AI Educator Series with DepEd, CHED, and TESDA frames AI as a teacher assistant under explicit policy guardrails. <u>[CoinGeek](https://coingeek.com/google-partners-with-deped-ched-tesda-to-launch-ai-educator-series-for-filipino-teachers/)</u>.
 
 ## 3. Nordic Focus
 
-🇳🇴 **Norway.** Norway’s debate continues to emphasize age-appropriate AI use, with earlier national reporting showing high uptake and political concern about younger pupils. <u>[VG](https://www.vg.no/nyheter/i/wreqMo/boom-i-ai-bruk-i-norsk-skole-ministeren-urolig)</u>.
+🇳🇴 **Norway.** Norwegian coverage continues to stress guardrails and age-appropriate use as AI uptake rises. <u>[VG](https://www.vg.no/nyheter/i/wreqMo/boom-i-ai-bruk-i-norsk-skole-ministeren-urolig)</u>.
 
-🇳🇴 **Norway.** Bodø’s role in the international AI Academy project keeps Norway focused on curriculum design and teacher capability-building. <u>[NRK](https://www.nrk.no/nordland/bodo-blir-eneste-kommune-i-internasjonal-prosjekt-om-kunstig-intelligens-i-skolen-1.17844687)</u>.
+🇳🇴 **Norway.** Bodø’s AI Academy work focuses on teacher competence, privacy awareness, and critical model use across subjects. <u>[NRK](https://www.nrk.no/nordland/bodo-blir-eneste-kommune-i-internasjonal-prosjekt-om-kunstig-intelligens-i-skolen-1.17844687)</u>.
 
-🇫🇮 **Finland.** Sanoma Learning’s Sanna remains a Nordic example of curriculum-grounded, teacher-reviewed AI support. <u>[Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/sanoma-learning-launches-sanna-ai-090000076.html)</u>.
+🇩🇰 **Denmark.** Upper-secondary students must orally defend written assignments to counter AI-assisted cheating. <u>[The Guardian](https://www.theguardian.com/technology/2026/aug/06/students-ai-cheating-schools-denmark)</u>.
+
+🇮🇸 **Iceland.** The education ministry says AI-assisted teaching-material workflows are under consideration, with funding allocation still open. <u>[Iceland Review](https://www.icelandreview.com/news/iceland-education-minister-ai-teaching-materials-2026/)</u>.
 
 ## 4. Around the Globe
 
-🇻🇳 **Vietnam.** Educators are pushing assessments toward multi-stage drafts, critique of AI outputs, and oral defense to make understanding visible. <u>[Vietnam News](https://vietnamnews.vn/society/1802270/ai-forces-teachers-to-rethink-teaching-and-assessment.html)</u>.
+🇺🇸 **US.** A national Students First Tour is scaling student participation in K-12 AI policy design. <u>[Government Technology](https://www.govtech.com/education/k-12/national-initiative-to-give-students-a-voice-in-school-ai-policy)</u>.
 
-🇵🇭 **Philippines.** Google, DepEd, CHED, and TESDA launched a free AI Educator Series for teachers and faculty. <u>[CoinGeek](https://coingeek.com/google-partners-with-deped-ched-tesda-to-launch-ai-educator-series-for-filipino-teachers/)</u>.
+🇦🇺 **Australia.** New guidance urges schools to use AI sparingly where it risks replacing core cognitive work. <u>[The Educator](https://www.theeducatoronline.com/k12/news/schools-get-new-guidance-on-the-use-of-ai-in-classrooms/289272)</u>.
 
-🇺🇸 **US.** Internal medicine residencies remain uneven on formal AI education while clinical AI use grows. <u>[BIOENGINEER](https://bioengineer.org/us-medical-residencies-are-flying-blind-on-ai-training-national-survey-finds/)</u>.
+🇨🇳 **China.** AI teaching tools are being piloted across 50+ schools, including simulated classrooms for teacher training. <u>[China Daily](https://www.chinadaily.com.cn/a/202610/22/WS6ad9949ee4b06d4aa0564314.html)</u>.
 
-🇺🇸 **US.** A district-level pause in South Carolina narrows student AI access to selected approved tools. <u>[WSOC-TV on MSN](https://www.msn.com/en-us/news/other/clover-school-district-pauses-student-use-of-most-ai-platforms/ar-AA2fLcg7)</u>.
+🌍 **Africa-Asia.** UNESCO-backed youth AI exchanges linked students and educators across countries in project-based coding collaboration. <u>[Devdiscourse](https://www.devdiscourse.com/article/education/3993518-young-coders-from-africa-and-asia-build-ai-skills-and-new-friendships-in-shenzhen)</u>.
 
-🇦🇪 **UAE.** Alef Education reports cross-region demand for AI-powered school tools, especially auto-grading to reduce teacher admin load. <u>[Zawya](https://www.zawya.com/en/press-release/companies-news/alef-education-attracts-international-interest-in-ai-powered-learning-solutions-at-ai-everything-abu-dhabi-2026-1588202)</u>.
+🇵🇭 **Philippines.** National educator training continues to scale practical AI use in classrooms and administration. <u>[CoinGeek](https://coingeek.com/google-partners-with-deped-ched-tesda-to-launch-ai-educator-series-for-filipino-teachers/)</u>.
 
 ## 5. Tools & Platforms
 
-Tools are now judged by what human judgment they preserve: assessment tools face a reasoning test, teacher-facing AI scales faster than student-facing AI, and clinical AI demands formal verification habits.
+Teacher simulators are moving into school pilots, national professional-development stacks are becoming AI rollout infrastructure, and assessment controls are now platform requirements—not optional extras.
 
 ## 6. Worth Watching
 
-Watch assessment reform outpace tool reform, district controls tighten, and professional programmes set verification norms that influence broader education. The main trend: learning proof is becoming the core AI challenge.
+Expect faster change in assessment than curriculum, broader student participation in AI governance, and sharper differentiation between systems with strong teacher training and those without.
