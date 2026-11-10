@@ -1,34 +1,34 @@
-# School AI governance is moving from pilot settings to enforceable rules
+# Schools are rewriting AI access rules faster than vendors expected
 
-This week’s education signals show systems moving beyond AI experimentation toward explicit controls on student access, platform behavior, and district accountability.
+This week, K-12 systems, ministries, and universities moved from AI pilots to enforceable controls, curriculum changes, and accountability frameworks.
 
 ## 1. Top Story
-K-12 policy attention is now centered on platform terms: schools want control of student AI exposure while keeping essential search and classroom workflows intact. <u>[TechCrunch](https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/)</u> and <u>[FingerLakes1](https://www.fingerlakes1.com/2026/11/08/google-clarifies-school-ai-policy-but-dispute-over-student-searches-remains/)</u>.
+School AI governance is now being negotiated at the product-setting level. U.S. schools are pressing for real control over student exposure to embedded AI features in search and classroom tools, not just optional chatbot toggles. <u>[The Hindu](https://www.thehindu.com/sci-tech/technology/googles-controversial-search-and-ai-policy-for-schools-explained/article71681878.ece)</u>, <u>[TechCrunch](https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/)</u>.
 
 ## 2. Research & Evidence
-- Education policy leaders continue to call for stronger AI evidence infrastructure to guide district decisions. <u>[Education Week](https://www.edweek.org/technology/we-need-research-on-ai-in-schools-the-feds-should-fund-it-report-says/2026/10)</u>.
-- Tamil Nadu launched AI-based self-learning for 25,140 students in 500 government middle schools. <u>[DigitalLEARNING](https://digitallearning.eletsonline.com/2026/11/tamil-nadu-ai-learning-schools/)</u>.
-- District policy labs are building reusable governance templates for safe AI rollout. <u>[Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/elite-academic-academy-joins-edsafe-202700523.html)</u>.
+- Seattle Public Schools announced blocks on Gemini and other generative AI tools, alongside stricter screen-time limits. <u>[KPTV](https://www.kptv.com/2026/11/06/seattle-schools-block-ai-tools-limit-screen-time/)</u>.
+- Tamil Nadu launched AI self-learning for 25,140 students in 500 government middle schools. <u>[DigitalLEARNING](https://digitallearning.eletsonline.com/2026/11/tamil-nadu-ai-learning-schools/)</u>.
+- Andhra Pradesh outlined AI skilling for 50 lakh learners across school, higher-ed, and youth pathways. <u>[DigitalLEARNING](https://digitallearning.eletsonline.com/2026/11/andhra-pradesh-ai-skills/)</u>.
 
 ## 3. Nordic Focus
-- 🇳🇴 Norway: Youth concern around AI’s effect on learning and career pathways remains a live education issue. <u>[NRK](https://www.nrk.no/sorlandet/ung-undersokelse_-unge-blir-stadig-mer-skeptiske-til-ki-1.18060793)</u>.
-- 🇮🇸 Iceland: A national AI report places education and skills at the center of implementation priorities. <u>[Iceland Review](https://www.icelandreview.com/news/iceland-ai-report-69-proposals-2026/)</u>.
-- 🇫🇮 Finland: School-focused teacher assistants continue gaining traction in Nordic-aligned education tooling. <u>[Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/sanoma-learning-launches-sanna-ai-090000076.html)</u>.
+- 🇳🇴 Norway: Youth skepticism around AI’s effect on learning and future jobs is rising, strengthening calls for guidance-first school policy. <u>[NRK](https://www.nrk.no/sorlandet/ung-undersokelse_-unge-blir-stadig-mer-skeptiske-til-ki-1.18060793)</u>.
+- 🇮🇸 Iceland: National AI planning continues to prioritize education and skills within broader implementation strategy. <u>[Iceland Review](https://www.icelandreview.com/news/iceland-ai-report-69-proposals-2026/)</u>.
+- 🇫🇮 Finland: Curriculum-aligned teacher AI assistants are expanding in Nordic-relevant school contexts. <u>[Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/sanoma-learning-launches-sanna-ai-090000076.html)</u>.
 
 ## 4. Around the Globe
-- 🇺🇸 U.S. debate over AI-linked search access is reshaping district governance decisions. <u>[The Hindu](https://www.thehindu.com/sci-tech/technology/googles-controversial-search-and-ai-policy-for-schools-explained/article71681878.ece)</u>.
-- 🇮🇳 India is scaling adaptive AI learning in public schools beyond pilot stages. <u>[DigitalLEARNING](https://digitallearning.eletsonline.com/2026/11/tamil-nadu-ai-learning-schools/)</u>.
-- 🇸🇬 Regional leaders at EDUtech Asia emphasized practical, human-centered AI implementation. <u>[Bastille Post](https://www.bastillepost.com/global/article/6279687-asias-largest-education-event-returns-edutech-asia-2026-brings-8000-educators-to-singapore-to-shape-a-human-centred-ai-powered-future-of-learning)</u>.
-- 🇲🇴 UNU Macau continues to frame AI literacy and governance with strong global-south participation. <u>[UNU Macau](https://unu.edu/macau/news/unu-macau-ai-conference-2026-first-program-released)</u>.
-- 🌍 Adult AI upskilling pathways are expanding through multi-country applied training programs. <u>[TechAfrica](https://tech.africa/akuna-google-ai-filmmaking-programme/)</u>.
-- 🇺🇸 Parent and teacher backlash is pushing for clearer school authority over AI use boundaries. <u>[The Guardian](https://www.theguardian.com/us-news/2026/nov/09/parents-teachers-google-search-schools-ai)</u>.
+- 🇺🇸 U.S. policy pressure is centered on how much control districts have over AI built into essential search tools. <u>[The Hindu](https://www.thehindu.com/sci-tech/technology/googles-controversial-search-and-ai-policy-for-schools-explained/article71681878.ece)</u>.
+- 🇮🇳 India is scaling AI learning in both school delivery and statewide skilling pathways. <u>[DigitalLEARNING](https://digitallearning.eletsonline.com/2026/11/tamil-nadu-ai-learning-schools/)</u>, <u>[DigitalLEARNING](https://digitallearning.eletsonline.com/2026/11/andhra-pradesh-ai-skills/)</u>.
+- 🇸🇬 Singapore-hosted EDUtech Asia emphasized human-centered implementation across K-12 and higher education. <u>[Bastille Post](https://www.bastillepost.com/global/article/6279687-asias-largest-education-event-returns-edutech-asia-2026-brings-8000-educators-to-singapore-to-shape-a-human-centred-ai-powered-future-of-learning)</u>.
+- 🇲🇴 Macau’s UNU conference highlighted governance and AI literacy with broad international participation. <u>[UNU Macau](https://unu.edu/macau/news/unu-macau-ai-conference-2026-first-program-released)</u>.
+- 🌍 African creative-sector AI training is expanding through multi-country adult-learning programs. <u>[TechAfrica](https://tech.africa/akuna-google-ai-filmmaking-programme/)</u>.
+- 🇦🇺 Australian higher-ed analysis flags a widening gap between student AI use and institutional policy readiness. <u>[Yahoo News Australia](https://au.news.yahoo.com/ai-now-universal-higher-education-184042276.html)</u>.
 
 ## 5. Tools & Platforms
-- Admin-level controls are becoming core K-12 AI governance infrastructure. <u>[TechCrunch](https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/)</u>.
-- State-backed adaptive platforms are moving quickly into mainstream public education. <u>[DigitalLEARNING](https://digitallearning.eletsonline.com/2026/11/tamil-nadu-ai-learning-schools/)</u>.
-- District policy stacks are accelerating practical governance maturity. <u>[Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/elite-academic-academy-joins-edsafe-202700523.html)</u>.
+- Schools are prioritizing admin-level controls and default-off governance. <u>[KPTV](https://www.kptv.com/2026/11/06/seattle-schools-block-ai-tools-limit-screen-time/)</u>.
+- Public systems are scaling adaptive AI platforms with teacher oversight. <u>[DigitalLEARNING](https://digitallearning.eletsonline.com/2026/11/tamil-nadu-ai-learning-schools/)</u>.
+- Search vendors are competing on AI-off flexibility for education. <u>[TechCrunch](https://techcrunch.com/2026/11/04/duckduckgo-pitches-itself-to-schools-amid-backlash-over-googles-ai-policy/)</u>.
 
 ## 6. Worth Watching
-- How schools negotiate AI restrictions inside essential digital services.
-- Whether evidence quality can catch up with deployment speed.
-- How fast teacher-readiness programs scale with policy and platform change.
+- Procurement clauses for AI defaults, data handling, and override rights.
+- Assessment redesign speed in universities as AI use normalizes.
+- Whether teacher training capacity can keep up with governance ambitions.
