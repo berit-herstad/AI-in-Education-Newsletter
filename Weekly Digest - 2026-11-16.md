@@ -1,4 +1,4 @@
-# AI governance is now the main battleground in education
+# AI controls and assessment proof are redefining education policy
 
 This week’s clearest shift is from experimentation to enforcement: schools and universities are tightening AI controls, redesigning assessment, and scaling teacher-facing implementation support.
 
